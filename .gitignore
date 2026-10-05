@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+
+# Experiment artifacts: everything here is reproduced by the scripts, nothing is tracked
+outputs/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+
+# Datasets and derived captures (see README for how to obtain them)
+data/
+*.smc
+*.bin
+
+# Rendered figures and videos
+*.mp4
+*.gif
+figures/out/
+
+# LaTeX build products
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+
+# Editor / OS
+.DS_Store
+*.swp

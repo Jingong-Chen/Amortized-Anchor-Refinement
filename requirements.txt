@@ -1,0 +1,22 @@
+# Core. Install a torch build that matches your CUDA runtime first, e.g.
+#   pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cu121
+torch>=2.3
+numpy>=1.24
+pillow>=10.0
+opencv-python>=4.9
+h5py>=3.10              # reading DNA-Rendering .smc captures
+matplotlib>=3.8
+tqdm
+
+# Rasterizer. Builds CUDA kernels on first import; needs nvcc and a host gcc
+# the CUDA release accepts (see README, Troubleshooting).
+gsplat>=1.3
+
+# Perceptual metric used by the refinement loss and by the evaluators
+lpips>=0.1.4
+
+# Topological pruning: superlevel persistence on the density grid
+gudhi>=3.9
+
+# Headless capture of the WebGL client (optional, only for the viewer figures)
+websocket-client>=1.7
